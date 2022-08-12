@@ -16,6 +16,18 @@ def nested_dict_pairs_iterator(dict_obj):
             # If value is not dict type then yield the value
             yield (key, value)
 
+def format_output(list_of_items_to_format):
+    list_without_item_totals = []
+    for item in list_of_items_to_format:
+        sub_catagory = item[1]
+        if sub_catagory != "total":
+            list_without_item_totals.append(item)
+    for item in list_without_item_totals:
+        sub_catagory = item[1]
+        dollar_amount = item[3]
+        print(f"{sub_catagory}: ${dollar_amount}")
+
+
 
 def calculate_budget(income, iterated_budget_plan):
     """ returns a list of lists with indexes 0-3, with index 3 being the actual dollars amount
@@ -29,9 +41,12 @@ def calculate_budget(income, iterated_budget_plan):
         item.append(amount_of_money)
         temporary_list_of_items.append(item)
         
-        if item[1] != "total":
-            print(f"{item[0]}: \n\t-{item[1]}: ${item[3]}")
+        # if item[1] != "total":
+        #     print(f"{item[0]}: \n\t-{item[1]}: ${item[3]}")
+    format_output(temporary_list_of_items)
     return(temporary_list_of_items)
+
+
 
 
 
@@ -47,8 +62,6 @@ elif budget_type == 'c':
     for pair in nested_dict_pairs_iterator(compromised_budget_plan):
         list_of_pairs.append(pair)
     new_list = calculate_budget(income_amount, list_of_pairs)
-
-
 
 
 
