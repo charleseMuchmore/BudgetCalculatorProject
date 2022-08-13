@@ -1,5 +1,6 @@
 from regular_budget_plan import regular_budget_plan
 from compromised_budget_plan import compromised_budget_plan
+from super_compromised_budget_plan import super_compromised_budget_plan
 
 def nested_dict_pairs_iterator(dict_obj):
     ''' This function accepts a nested dictionary as argument
@@ -52,7 +53,7 @@ def calculate_budget(income, iterated_budget_plan):
 
 list_of_pairs = []
 income_amount = input("Income Amount: $")
-budget_type = input("Which budget plan, regular, or compromised? (r/c) ")
+budget_type = input("Which budget plan, regular, compromised, or super compromised? (r/c/sc) ")
 if budget_type == 'r':
     #Loop through all key-value pairs of a nested dictionary
     for pair in nested_dict_pairs_iterator(regular_budget_plan):
@@ -62,7 +63,10 @@ elif budget_type == 'c':
     for pair in nested_dict_pairs_iterator(compromised_budget_plan):
         list_of_pairs.append(pair)
     new_list = calculate_budget(income_amount, list_of_pairs)
-
+elif budget_type == "sc":
+    for pair in nested_dict_pairs_iterator(super_compromised_budget_plan):
+        list_of_pairs.append(pair)
+    new_list = calculate_budget(income_amount, list_of_pairs)
 
 
 

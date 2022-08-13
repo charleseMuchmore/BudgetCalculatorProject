@@ -1,4 +1,4 @@
-compromised_budget_plan = {
+super_compromised_budget_plan = {
     "giving" : 
     {   
         "total" : 0.1,
@@ -7,19 +7,19 @@ compromised_budget_plan = {
     },
     "savings" : 
     {
-        "total" : 0.5,
-        "savings" : 0.5,
+        "total" : 0.2,
+        "savings" : 0.2,
     },
     "transportation" : 
     {
-        "total" : 0.12,
-        "gas" : 0.1,
-        "maintenance savings" : 0.02,
+        "total" : 0.30,
+        "gas" : 0.25,
+        "maintenance savings" : 0.05,
     },
     "food" : 
     {
-        "total" : 0.1,
-        "groceries" : 0.1,
+        "total" : 0.24,
+        "groceries" : 0.24,
     },
     "personal" : 
     {
@@ -29,9 +29,9 @@ compromised_budget_plan = {
     },
     "lifestyle" : 
     {
-        "total" : 0.09,
-        "upgrades" : 0.04,
-        "social extras" : 0.03,
+        "total" : 0.07,
+        "upgrades" : 0.03,
+        "social extras" : 0.02,
         "food extras" : 0.02,
     },
     "health" : 
