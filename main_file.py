@@ -1,7 +1,7 @@
 from regular_budget_plan import regular_budget_plan
 from compromised_budget_plan import compromised_budget_plan
 from super_compromised_budget_plan import super_compromised_budget_plan
-
+import pandas
 def nested_dict_pairs_iterator(dict_obj):
     ''' This function accepts a nested dictionary as argument
         and iterate over all values of nested dictionaries
@@ -76,3 +76,9 @@ def check_budget_total(list_of_totals_where_index3_is_dollar_amount):
         if item[1] != "total":
             total += item[3]
     print(f"total: {total}")
+
+def create_plan_basedon_gas_needs(income_amount):
+    gas_needs = input("how much will you need for gas this month? $")
+    
+data = pandas.DataFrame(data_dict)
+data.to_csv("new_data.csv")

@@ -1,7 +1,8 @@
+import pandas
 regular_budget_plan = {
     "giving" : 
     {   
-        "total" : 0.01,
+        "total" : 0.1,
         "church" : 0.08, 
         "other" : 0.02,
     },
@@ -18,7 +19,7 @@ regular_budget_plan = {
     },
     "food" : 
     {
-        "total" : 0.01,
+        "total" : 0.1,
         "groceries" : 0.1,
     },
     "personal" : 
@@ -41,3 +42,4 @@ regular_budget_plan = {
         "other" : 0.01,
     },
     }
+
