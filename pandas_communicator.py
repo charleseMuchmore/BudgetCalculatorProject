@@ -13,3 +13,15 @@ class PandasCommunicator:
 
     def loc_dataframe(dataframe, list_of_column_names):
         return dataframe.loc[:, list_of_column_names]
+
+    def iterate(dataframe):
+        return dataframe.__iter__()
+
+    def to_dict_dataframe(dataframe, parameter):
+        return dataframe.to_dict(parameter)
+
+    def columns(dataframe):
+        return dataframe.columns
+
+    def DataFrame(data_to_frame):
+        return pandas.DataFrame(data_to_frame)
