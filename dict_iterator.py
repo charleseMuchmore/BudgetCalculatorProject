@@ -9,3 +9,4 @@ class DictIterator:
         for i in dict_dataframe[column_to_check]:
             if i == item_to_check:
                 return dict_dataframe[column_to_check][i]
+
