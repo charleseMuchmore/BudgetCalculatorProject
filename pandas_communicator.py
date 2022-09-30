@@ -14,6 +14,7 @@ class PandasCommunicator:
     def loc_dataframe(dataframe, list_of_column_names):
         return dataframe.loc[list_of_column_names]
 
+
     def iterate(dataframe):
         return dataframe.__iter__()
 
