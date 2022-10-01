@@ -37,6 +37,3 @@ class PandasCommunicator:
         """mapper is dict that looks like this: {old_name1 : new_name1, old_name2 : new_name2}. Axis is either 0 or 1: 0=y, 1=x"""
         return dataframe.rename(mapper, axis=axis)
 
-    def hide_index(dataframe):
-        return dataframe.style.hide_index(dataframe)
-    
