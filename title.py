@@ -15,6 +15,7 @@ TITLE_ART = """
 class Title:
 
     def __init__(self):
+        self.retrieve_commands()
         self.title_art = TITLE_ART
         self.list_of_commands = []
 
@@ -22,3 +23,6 @@ class Title:
         print(self.title_art)
         print(self.list_of_commands)
         return input("What would you like to do? Type Here: ")
+
+    def retrieve_commands(self):
+        pass
