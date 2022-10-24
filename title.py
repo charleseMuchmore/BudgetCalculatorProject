@@ -16,9 +16,8 @@ class Title:
 
     def __init__(self):
         self.title_art = TITLE_ART
-        self.list_of_commands = []
 
     def print_title(self):
         print(self.title_art)
-        print(self.list_of_commands)
-        return input("What would you like to do? Type Here: ")
+        return input("What is the income amount? $")
+  

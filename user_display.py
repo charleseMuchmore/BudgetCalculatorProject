@@ -5,7 +5,7 @@ class UserDisplay:
     
     def display_row_info(dataframe, row_name):
         """Requires a dataframe and a str(row_name), returns a new dataframe containing the information from that row"""
-        new_dataframe = PandasCommunicator.loc_dataframe(dataframe, row)
+        new_dataframe = PandasCommunicator.loc_dataframe(dataframe, row_name)
         return new_dataframe
 
     # def display_info_column(dataframe, column_name):
